@@ -97,6 +97,10 @@ img {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 /* #active {
   background-color: whitesmoke;
   font-weight: bold;
