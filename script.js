@@ -2,22 +2,69 @@ const score1 = document.querySelector('.score1');
 const score2 = document.querySelector('.score2');
 console.log(score1.textContent);
 const display1 = document.querySelector('.display1');
+const display1El = Number(display1.textContent);
 const display2 = document.querySelector('.display2');
-console.log(display1.textContent);
+const display2El = Number(display2.textContent);
+// console.log(display1.textContent);
 const dice = document.querySelector('.dice');
 const player1 = document.querySelector('.player1');
 const player2 = document.querySelector('.player2');
 const newGame = document.querySelector('.refresh');
-const roll = document.querySelector('.roll');
-console.log(roll.textContent);
+const roller1 = document.querySelector('.roll1');
+const roller2 = document.querySelector('.roll2');
+// console.log(roller2.textContent);
+
+score1.textContent = 0;
+score2.textContent = 0;
+display1.textContent = 0;
+display1.textContent = 0;
+let score = 0;
+let activePlayer = 1;
+//const score = Number(score1.textContent);
+
 dice.classList.add('hidden');
 
-roll.addEventListener('click', function () {
+const diceRoll2 = Math.floor(Math.random() * 6) + 1;
+
+roller1.addEventListener('click', function () {
   const diceRoll = Math.floor(Math.random() * 6) + 1;
   dice.classList.remove('hidden');
-  roll.style.cursor = 'pointer';
-  newGame.style.cursor = 'pointer';
+  roller1.style.cursor = 'pointer';
   dice.src = `image/dice-${diceRoll}.png`;
-  console.log(diceRoll);
+  //   console.log(diceRoll1);
   display1.textContent = diceRoll;
+
+  if (diceRoll !== 1) {
+    // score1.textContent = 'Winner!';
+    score += diceRoll;
+    document.querySelector(`.score${activePlayer}`).textContent = score;
+  } else {
+    activePlayer = activePlayer === 1 ? 2 : 1;
+  }
+  ``;
+  if (document.querySelector(`.score${activePlayer}`).textContent >= 30) {
+    document.querySelector(`.score${activePlayer}`).textContent = 'Winner';
+  }
 });
+//console.log(score`${activePlayer}`);
+// roller2.addEventListener('click', function () {
+//   diceRoll2;
+//   dice.classList.remove('hidden');
+//   roller2.style.cursor = 'pointer';
+//   dice.src = `image/dice-${diceRoll2}.png`;
+//   //   console.log(diceRoll2);
+//   display2.textContent = diceRoll2;
+
+//   //   if (diceRoll1 > diceRoll2) {
+//   //     score1.textContent += 10;
+//   //   } else if (diceRoll1 === diceRoll2) {
+//   //     score1.textContent = 10;
+//   //   } else {
+//   //     score2.textContent += 10;
+//   //   }
+// });
+// console.log(typeof display1El);
+// console.log(typeof display2El);
+// console.log(typeof score1.textContent);
+// // console.log(score);
+// // console.log(typeof score);
