@@ -20,13 +20,16 @@ display1.textContent = 0;
 display1.textContent = 0;
 let score = 0;
 let activePlayer = 1;
+let playing = true;
 //const score = Number(score1.textContent);
 
 function win() {
   if (score1.textContent >= 15) {
     player1.textContent = 'Player 1 Won!';
+    playing = false;
   } else if (score2.textContent >= 15) {
     player2.textContent = 'Player 2 Won!';
+    playing = false;
   }
 }
 win();
@@ -35,63 +38,67 @@ dice.classList.add('hidden');
 // const diceRoll2 = Math.floor(Math.random() * 6) + 1;
 
 roller1.addEventListener('click', function () {
-  const diceRoll = Math.floor(Math.random() * 6) + 1;
-  dice.classList.remove('hidden');
-  roller1.style.cursor = 'pointer';
-  dice.src = `image/dice-${diceRoll}.png`;
-  //   console.log(diceRoll1);
-  // if (score1 >= 15) {
-  //   player1.textContent = 'Player 1 Won!';
-  // } else if (score2 >= 15) {
-  //   player2.textContent = 'Player 2 Won!';
-  // }
-  //display2.textContent = diceRoll;
-
-  if (diceRoll !== 1) {
-    // score1.textContent = 'Winner!';
-    //display1.textContent = diceRoll;
-    score += diceRoll;
-    document.querySelector(`.display${activePlayer}`).textContent = diceRoll;
-    document.querySelector(`.score${activePlayer}`).textContent = score;
-    win();
-
-    // document.querySelector('.score2').textContent = score;
+  if (playing) {
+    const diceRoll = Math.floor(Math.random() * 6) + 1;
+    dice.classList.remove('hidden');
+    roller1.style.cursor = 'pointer';
+    dice.src = `image/dice-${diceRoll}.png`;
+    //   console.log(diceRoll1);
     // if (score1 >= 15) {
     //   player1.textContent = 'Player 1 Won!';
     // } else if (score2 >= 15) {
     //   player2.textContent = 'Player 2 Won!';
     // }
-  } else {
-    score = 0;
-    document.querySelector(`.score${activePlayer}`).textContent = 0;
-    document.querySelector(`.display${activePlayer}`).textContent = 0;
-    // activePlayer = activePlayer === 1 ? 2 : 1;
-    if (activePlayer === 1) {
-      activePlayer = 2;
+    //display2.textContent = diceRoll;
+
+    if (diceRoll !== 1) {
+      // score1.textContent = 'Winner!';
+      //display1.textContent = diceRoll;
+      score += diceRoll;
       document.querySelector(`.display${activePlayer}`).textContent = diceRoll;
-      display1.textContent = 0;
       document.querySelector(`.score${activePlayer}`).textContent = score;
-      // if (score2 >= 20) {
-      //   player2.textContent = 'Player 2 Won!';
-    } else if (activePlayer === 2) {
-      activePlayer = 1;
-      document.querySelector(`.display${activePlayer}`).textContent = diceRoll;
-      display2.textContent = 0;
-      document.querySelector(`.score${activePlayer}`).textContent = score;
-      // if (score1 >= 20) {
+      win();
+
+      // document.querySelector('.score2').textContent = score;
+      // if (score1 >= 15) {
       //   player1.textContent = 'Player 1 Won!';
+      // } else if (score2 >= 15) {
+      //   player2.textContent = 'Player 2 Won!';
       // }
+    } else {
+      score = 0;
+      document.querySelector(`.score${activePlayer}`).textContent = 0;
+      document.querySelector(`.display${activePlayer}`).textContent = 0;
+      // activePlayer = activePlayer === 1 ? 2 : 1;
+      if (activePlayer === 1) {
+        activePlayer = 2;
+        document.querySelector(`.display${activePlayer}`).textContent =
+          diceRoll;
+        display1.textContent = 0;
+        document.querySelector(`.score${activePlayer}`).textContent = score;
+        // if (score2 >= 20) {
+        //   player2.textContent = 'Player 2 Won!';
+      } else if (activePlayer === 2) {
+        activePlayer = 1;
+        document.querySelector(`.display${activePlayer}`).textContent =
+          diceRoll;
+        display2.textContent = 0;
+        document.querySelector(`.score${activePlayer}`).textContent = score;
+        // if (score1 >= 20) {
+        //   player1.textContent = 'Player 1 Won!';
+        // }
+      }
+      // document.querySelector(`.display${activePlayer}`).textContent = diceRoll;
     }
-    // document.querySelector(`.display${activePlayer}`).textContent = diceRoll;
+    // if (score1 >= 15) {
+    //   player1.textContent = 'Player 1 Won!';
+    // } else if (score2 >= 15) {
+    //   player2.textContent = 'Player 2 Won!';
+    // }
+    //   if (document.querySelector(`.score${activePlayer}`).textContent >= 10) {
+    //     document.querySelector(`.score${activePlayer}`).textContent = 'Winner';
+    //   }
   }
-  // if (score1 >= 15) {
-  //   player1.textContent = 'Player 1 Won!';
-  // } else if (score2 >= 15) {
-  //   player2.textContent = 'Player 2 Won!';
-  // }
-  //   if (document.querySelector(`.score${activePlayer}`).textContent >= 10) {
-  //     document.querySelector(`.score${activePlayer}`).textContent = 'Winner';
-  //   }
 });
 
 // console.log(player1.textContent);
