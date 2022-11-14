@@ -27,9 +27,11 @@ function win() {
   if (score1.textContent >= 15) {
     player1.textContent = 'Player 1 Won!';
     playing = false;
+    dice.classList.add('hidden');
   } else if (score2.textContent >= 15) {
     player2.textContent = 'Player 2 Won!';
     playing = false;
+    dice.classList.add('hidden');
   }
 }
 win();
