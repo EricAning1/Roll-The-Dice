@@ -75,7 +75,6 @@ body {
   border-radius: 5%;
   border-width: 0;
   box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.4);
-  /* text-shadow: 0 10px 10px rgb(0, 0, 0, 0.2); */
 }
 
 #roll {
@@ -83,7 +82,7 @@ body {
   grid-row: 5 / 6;
   display: grid;
   gap: 15px;
-  /* box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.3); */
+
   border-width: 10px;
 }
 
@@ -114,8 +113,3 @@ img {
 .hidden {
   display: none;
 }
-
-/* #active {
-  background-color: whitesmoke;
-  font-weight: bold;
-} */
