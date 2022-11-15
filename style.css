@@ -5,7 +5,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: purple;
+  background-color: #d9dad7;
   font-weight: bold;
   color: rgb(167, 93, 93);
 }
@@ -80,14 +80,16 @@ body {
   grid-template-rows: repeat(5, 1fr);
   place-items: center;
   gap: 20px;
-  width: 900px;
-  height: 600px;
-  background-color: brown;
+  width: 800px;
+  height: 450px;
+  background-color: #455d7a;
   justify-content: center;
   margin: 100px auto;
-  border-width: 50px;
-  border-color: blue;
+  /* border-width: 150px;
+  border-color: blue; */
   border-radius: 1.5%;
+  padding: 50px 50px;
+  box-shadow: 100px 100px 10px 0 beige;
 }
 
 img {
