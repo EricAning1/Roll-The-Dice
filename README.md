@@ -19,5 +19,5 @@ Fork and clone this repository to access locally on your machine
 * Player 1 rolls the dice first. The 'ROLL DICE' button is clicked to start the game
 * The dice number rolled is displayed on the board. This number is added to the score whenever a dice is rolled
 * There is switch to Player 2 when dice 1 is  rolled. The active player status keeps alternating whenever dice 1 is rolled
-* Any player who gets a score of 50 wins the game
+* Any player who gets a score of 30 wins the game
 * Click the 'NEW GAME' button to restart game
