@@ -1,11 +1,10 @@
 # Roll-The-Dice
----
+
 This is my first Project at Per Scholas Bootcamp, a fun game of Dice involving two players
----
 
 [-live site](https://ericaning1.github.io/Roll-The-Dice/)
 
-<img src=![gameStart](https://user-images.githubusercontent.com/105817567/202448005-ad507b0a-f2a4-48b9-97d2-b3d531824f65.PNG)
+<img src='![gameStart](https://user-images.githubusercontent.com/105817567/202448005-ad507b0a-f2a4-48b9-97d2-b3d531824f65.PNG)'
 
 ### Access
 Fork and clone this repository to access locally on your machine
