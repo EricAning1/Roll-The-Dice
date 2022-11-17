@@ -1,6 +1,6 @@
 # Roll-The-Dice
 
-This is my first Project at Per Scholas Bootcamp, a fun game of Dice involving two players
+This is my first major Project at Per Scholas Bootcamp, a fun game of Dice involving two players
 
 [-live site](https://ericaning1.github.io/Roll-The-Dice/)
 
