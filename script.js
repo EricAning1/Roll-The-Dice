@@ -29,12 +29,12 @@ function refresh() {
 refresh();
 
 function win() {
-  if (score1.textContent >= 50) {
+  if (score1.textContent >= 30) {
     player1.textContent = 'Player 1 Won!';
     playing = false;
     dice.classList.add('hidden');
     container.style.backgroundColor = '#8ef6e4';
-  } else if (score2.textContent >= 50) {
+  } else if (score2.textContent >= 30) {
     player2.textContent = 'Player 2 Won!';
     playing = false;
     dice.classList.add('hidden');
