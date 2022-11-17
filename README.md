@@ -4,7 +4,7 @@ This is my first Project at Per Scholas Bootcamp, a fun game of Dice involving t
 
 [-live site](https://ericaning1.github.io/Roll-The-Dice/)
 
-![alt text]((https://user-images.githubusercontent.com/105817567/202448005-ad507b0a-f2a4-48b9-97d2-b3d531824f65.PNG)
+![alt text](![rollTheDice](https://user-images.githubusercontent.com/105817567/202460097-e71497cd-8231-4a5c-82a1-1f4cbeb56a63.PNG)
 
 ### Access
 Fork and clone this repository to access locally on your machine
