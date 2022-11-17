@@ -2,16 +2,13 @@ const score1 = document.querySelector('.score1');
 const score2 = document.querySelector('.score2');
 console.log(score1.textContent);
 const display1 = document.querySelector('.display1');
-const display1El = Number(display1.textContent);
 const display2 = document.querySelector('.display2');
-const display2El = Number(display2.textContent);
-const container = document.getElementById('content');
 const dice = document.querySelector('.dice');
 const player1 = document.querySelector('.player1');
 const player2 = document.querySelector('.player2');
-const newGame = document.querySelector('.refresh');
 const roller = document.querySelector('.roll');
 const restart = document.querySelector('.refresh');
+
 let playing, score, activePlayer;
 
 function refresh() {
