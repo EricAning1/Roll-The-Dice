@@ -22,5 +22,5 @@ Fork and clone this repository to access locally on your machine
 * Any player who gets a score of 30 wins the game
 * Click the 'NEW GAME' button to restart game
 
-## Acknowledges 
-I am grateful to my tutuors Tishana and Kasper who taugt me how to come up with solutions on my own before seeking help from other people
+## Acknowledgements 
+I am grateful to my tutuors Tishana and Kasper who taugt me how to come up with solutions on my own before seeking help from other people. Tnanks to my colleagues too for their guidance and help 
